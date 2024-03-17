@@ -72,6 +72,17 @@ a {
    
 }
 
+.header {
+  /*  */
+  padding-top:35px;
+}
+/* S */
+.nav-links .link {
+  margin-right: 4px;
+}
+
+
+
 header nav a {
   color:#000;
 }
@@ -80,6 +91,88 @@ header nav a {
 header nav {
   display: none;
 }
+
+
+/* Introducton start */
+
+
+/* descendant selector */
+.introduction > .intro-left-side h1 span {
+  /* ctrl / */
+  /* font-size: 72px; */
+
+  color: #FF8A56;
+
+}
+
+.introduction .intro-left-side h1 {
+  margin-top: 42px;
+  font-size: 37px;
+}
+
+/* mobile first  */
+/* Introducton end */
+
+
+
+
+/* 476px */
+
+.intro-right-side {
+  width: 300px;
+}
+
+.intro-right-side img {
+  width: 100%;
+}
+
+.intro-left-side p {
+  color:#666;
+  font-size: 18px;
+}
+
+.intro-left-side .book-a-call .book-btn {
+  background: #222;
+  color:#fff;
+  width: 151px;
+  height: 58px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  transition: 1.4s ease;
+}
+
+
+
+.cv {
+  margin-left: 20px;
+  color:#000;
+}
+
+.arrow {
+  margin-left: 4px;
+}
+
+.shirketler h5 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+
+.partnyorlar {
+  display: flex;
+  justify-content: space-around;
+}
+
+.shirket {
+  margin-top: 20px;
+}
+
+
+
+
+
 
 @media(min-width:768px) {
   .fa-bars {
@@ -91,8 +184,47 @@ header nav {
     gap: 3px;
     align-items: center;
   }
+
+  .introduction {
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    
+  }
+
+  /* DRY YAGNI KISS */
+
+  .introduction .intro-left-side h1 {
+    font-size: 3rem;
+  }
+
+  .intro-right-side {
+    width: 400px;
+    margin-top: 40px;
+  }
+
+  .two-groups {
+    display: flex;
+    justify-content: space-around;
+   
+    flex-basis: 50%;
+  } 
+
+
+
+
   
 }
+
+@media(min-width: 992px) {
+  .introduction .intro-left-side h1 {
+    font-size: 4.5rem;
+  }
+
+}
+
+
+
 
 
 
